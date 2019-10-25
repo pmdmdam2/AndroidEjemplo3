@@ -115,6 +115,7 @@ Este ejemplo muestra tres widgets en un ConstraintLayout. Incluye además una ba
 Hasta aquí la parte declarativa del proyecto, a continuación se muestra el código del método onCreate en el que se incluye una lógica para ocultar y mostrar los widgets que están dentro del grupo, utilizando para ello un Switch.
 
 @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
