@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked)
-                    grMostrar.setVisibility(View.GONE);
-                else
                     grMostrar.setVisibility(View.VISIBLE);
+                else
+                    grMostrar.setVisibility(View.GONE);
             }
         });
     }

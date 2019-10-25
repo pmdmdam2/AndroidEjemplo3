@@ -45,18 +45,20 @@
         app:barrierDirection="left"
         app:constraint_referenced_ids="etHora,etFecha"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_contraintRef />
+         />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/grMostrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="etFecha,etHora,swMostrar" />
+        android:visibility="gone"
+        app:constraint_referenced_ids="etFecha,etHora" />
 
     <Switch
         android:id="@+id/swMostrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="false"
         android:text="@string/mostrar"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
