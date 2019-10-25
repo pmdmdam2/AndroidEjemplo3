@@ -109,3 +109,23 @@ Este ejemplo muestra tres widgets en un ConstraintLayout. Incluye además una ba
         //posición de comienzo de la línea guía respecto del ConstraintLayout
         app:layout_constraintGuide_begin="79dp" 
 />
+
+Hasta aquí la parte declarativa del proyecto, a continuación se muestra el código del método onCreate en el que se incluye una lógica para ocultar y mostrar los widgets que están dentro del grupo, utilizando para ello un Switch.
+
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Switch swMostrar = findViewById(R.id.swMostrar);
+        final Group grMostrar = findViewById(R.id.grMostrar);
+
+        swMostrar.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked)
+                    grMostrar.setVisibility(View.VISIBLE);
+                else
+                    grMostrar.setVisibility(View.GONE);
+            }
+        });
+    }
