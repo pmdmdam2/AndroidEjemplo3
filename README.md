@@ -1,7 +1,7 @@
 # ConstraintLayout 3
 Este ejemplo muestra tres widgets en un ConstraintLayout. Incluye además una barrera y una línea guía que se utilizan para mostrar para que se pueden utilizar en diseño. Además se incluye un grupo que incluye los dos EditText, uno de tipo fecha y otro de tipo hora. A continuación se describe el diseño de los widgets incluidos en el ConstraintLayout:
 
-![Captura del diseño de la interfaz](https://pmdmdam2.github.io/AndroidEjemplo3/app/src/main/assets/clapp3_1.png)
+![Captura del diseño de la interfaz](https://pmdmdam2.github.io/AndroidEjemplo3/master/app/src/main/assets/clapp3_1.png)
 
 - EditText de tipo hora
 
